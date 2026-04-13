@@ -6,10 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-class AlertSubjectTest {
+class AlertSubjectTest 
+{
 
     @Test
-    void notifiesAllSubscribersWithTypedPayload() {
+    void notifiesAllSubscribersWithTypedPayload() 
+    {
         AlertSubject<SecurityAlert> subject = new AlertSubject<>();
         List<String> levels = new ArrayList<>();
 
