@@ -3,9 +3,11 @@ package edu.norcocollege.cis18b.week6.mini03;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WildcardsPecsClinic {
+public class WildcardsPecsClinic 
+{
+    public static void main(String[] args)
+    {
 
-    public static void main(String[] args) {
         List<Number> gradedScores = List.of(100, 85.5, 80);
         double total = WildcardUtils.sumAll(gradedScores);
 

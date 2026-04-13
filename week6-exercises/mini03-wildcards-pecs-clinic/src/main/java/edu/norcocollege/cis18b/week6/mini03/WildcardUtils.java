@@ -4,7 +4,9 @@ import java.util.List;
 
 public final class WildcardUtils {
 
-    private WildcardUtils() {
+    private WildcardUtils() 
+    {
+    // PECS Explanation: Producer -> extends, Consumer -> super
     }
 
     public static double sumAll(List<? extends Number> values) {
