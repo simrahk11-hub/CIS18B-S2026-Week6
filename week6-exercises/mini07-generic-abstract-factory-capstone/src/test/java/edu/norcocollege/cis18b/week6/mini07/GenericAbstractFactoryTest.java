@@ -5,24 +5,27 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-class GenericAbstractFactoryTest {
-
+class GenericAbstractFactoryTest 
+{
     @Test
-    void rendersCampusFamily() {
+    void rendersCampusFamily() 
+    {
         String rendered = ScreenRenderer.render(new CampusUIFactory());
 
         assertEquals("CampusButton + CampusDialog", rendered);
     }
 
     @Test
-    void rendersMobileFamily() {
+    void rendersMobileFamily() 
+    {
         String rendered = ScreenRenderer.render(new MobileUIFactory());
 
         assertEquals("MobileButton + MobileDialog", rendered);
     }
 
     @Test
-    void factoryProducesExpectedConcreteTypes() {
+    void factoryProducesExpectedConcreteTypes() 
+    {
         CampusUIFactory factory = new CampusUIFactory();
 
         assertTrue(factory.createButton() instanceof CampusButton);
